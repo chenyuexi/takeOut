@@ -42,9 +42,9 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)loginAction:(id)sender {
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-//    window.rootViewController = [sb instantiateViewControllerWithIdentifier:@"mainTabbarID"];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    window.rootViewController = [sb instantiateViewControllerWithIdentifier:@"mainTabbarID"];
     if ([self.accountTxt.text isEqualToString:@"18819258238"] && [self.passwordTxt.text isEqualToString:@"abc"] && [self.modeTypeStr isEqualToString:@"mainTabbarID"]) {
         
         
